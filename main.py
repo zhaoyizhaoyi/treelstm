@@ -179,7 +179,7 @@ def main():
                 'pearson': test_pearson, 'mse': test_mse,
                 'args': args, 'epoch': epoch
             }
-            logger.debug('==> New optimum found, checkpointing everything now...')
+            logger.debug('==> New optimum found, check-pointing everything now...')
             torch.save(checkpoint, '%s.pt' % os.path.join(args.save, args.expname))
 
 
